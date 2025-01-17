@@ -153,21 +153,28 @@ title_error = { fg = "#d20f39" }
 [filetype]
 
 rules = [
-	# Images
-	{ mime = "image/*", fg = "#179299" },
-
 	# Media
-	{ mime = "{audio,video}/*", fg = "#df8e1d" },
+	{ mime = "{image,audio,video}/*", fg = "#df8e1d" },
 
 	# Archives
 	{ mime = "application/{zip,rar,7z*,tar,gzip,xz,zstd,bzip*,lzma,compress,archive,cpio,arj,xar,ms-cab*}", fg = "#ea76cb" },
+	{ mime = "application/{zip,rar,7z*,tar,gzip,xz,zstd,bzip*,lzma,compress,archive,cpio,arj,xar,ms-cab*}", fg = "#ea76cb" },
 
 	# Documents
-	{ mime = "application/{pdf,doc,rtf}", fg = "#40a02b" },
+	{ mime = "application/{pdf,doc,rtf}", fg = "#8839ef" },
+
+	# Symlinks
+	{ name = "*", is = "orphan", fg = "#d20f39", bold = true },
+	{ name = "*", is = "link", fg = "#179299", bold = true },
+
+	# Executable
+	{ name = "*", is = "exec", fg = "#40a02b", bold = true },
 
 	# Fallback
+	{ name = "*", is = "hidden", fg = "#4c4f69", dim = true },
+	{ name = "*/", is = "hidden", fg = "#1e66f5", bold = true, dim = true },
 	{ name = "*", fg = "#4c4f69" },
-	{ name = "*/", fg = "#1e66f5" }
+	{ name = "*/", fg = "#1e66f5", bold = true }
 ]
 
 # : }}}

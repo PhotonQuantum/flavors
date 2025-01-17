@@ -153,21 +153,28 @@ title_error = { fg = "{{ red }}" }
 [filetype]
 
 rules = [
-	# Images
-	{ mime = "image/*", fg = "{{ teal }}" },
-
 	# Media
-	{ mime = "{audio,video}/*", fg = "{{ yellow }}" },
+	{ mime = "{image,audio,video}/*", fg = "{{ yellow }}" },
 
 	# Archives
 	{ mime = "application/{zip,rar,7z*,tar,gzip,xz,zstd,bzip*,lzma,compress,archive,cpio,arj,xar,ms-cab*}", fg = "{{ pink }}" },
+	{ mime = "application/{zip,rar,7z*,tar,gzip,xz,zstd,bzip*,lzma,compress,archive,cpio,arj,xar,ms-cab*}", fg = "{{ pink }}" },
 
 	# Documents
-	{ mime = "application/{pdf,doc,rtf}", fg = "{{ green }}" },
+	{ mime = "application/{pdf,doc,rtf}", fg = "{{ mauve }}" },
+
+	# Symlinks
+	{ name = "*", is = "orphan", fg = "{{ red }}", bold = true },
+	{ name = "*", is = "link", fg = "{{ teal }}", bold = true },
+
+	# Executable
+	{ name = "*", is = "exec", fg = "{{ green }}", bold = true },
 
 	# Fallback
+	{ name = "*", is = "hidden", fg = "{{ text }}", dim = true },
+	{ name = "*/", is = "hidden", fg = "{{ blue }}", bold = true, dim = true },
 	{ name = "*", fg = "{{ text }}" },
-	{ name = "*/", fg = "{{ blue }}" }
+	{ name = "*/", fg = "{{ blue }}", bold = true }
 ]
 
 # : }}}

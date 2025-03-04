@@ -7,6 +7,10 @@ See https://yazi-rs.github.io/docs/flavors/overview for details.
 > [!TIP]
 > If you've created a flavor for Yazi, please raise a PR to add your repo to the `README.md`.
 
+## [dracula.yazi](./dracula.yazi)
+
+<img src="./dracula.yazi/preview.png" width="600" />
+
 ## [catppuccin-mocha.yazi](./catppuccin-mocha.yazi)
 
 <img src="./catppuccin-mocha.yazi/preview.png" width="600" />
@@ -74,6 +78,18 @@ See https://yazi-rs.github.io/docs/flavors/overview for details.
 ## [Timu macOS light](https://gitlab.com/aimebertrand/timu-macos-yazi/-/tree/main/timu-macos-light.yazi)
 
 <img src="https://gitlab.com/aimebertrand/timu-macos-yazi/-/raw/main/timu-macos-light.yazi/preview.png" width="600" />
+
+## [Ashen](https://github.com/ashen-org/ashen/tree/main/ashen.yazi)
+
+<img src="https://raw.githubusercontent.com/ashen-org/ashen/refs/heads/main/ashen.yazi/preview.png" width="600" />
+
+## [Flexoki Dark](https://github.com/gosxrgxx/flexoki-dark.yazi)
+
+<img src="https://raw.githubusercontent.com/gosxrgxx/flexoki-dark.yazi/main/preview.png" width="600" />
+
+## [Flexoki Light](https://github.com/gosxrgxx/flexoki-light.yazi)
+
+<img src="https://raw.githubusercontent.com/gosxrgxx/flexoki-light.yazi/main/preview.png" width="600" />
 
 ## Themes
 
